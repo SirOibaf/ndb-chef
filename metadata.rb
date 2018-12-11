@@ -279,7 +279,7 @@ attribute "ndb/NoOfFragmentLogParts",
           :type => 'string'
 
 attribute "ndb/NoOfFragmentLogFiles",
-          :description =>  "Number of fragment logfiles for writing LCPS.", 
+          :description =>  "Number of fragment logfiles for writing LCPS.",
           :type => 'string'
 
 attribute "ndb/bind_cpus",
@@ -364,6 +364,13 @@ attribute "ndb/IndexMemory",
 attribute "ndb/EnableRedoControl",
           :description => "Control disk read/write speeds automatically for LCPs (default '1', to turn off - set to '0'",
           :type => 'string'
+
+attribute "ndb/DiskIOThreadPool",
+          :description => "This parameter determines the number of unbound threads used for Disk Data file access",
+          :type => 'string'
+
+attribute "ndb/DiskPageBufferMemory",
+          :description => "This determines the amount of space used for caching pages on disk",
 
 attribute "install/dir",
           :description => "Set to a base directory under which we will install.",
