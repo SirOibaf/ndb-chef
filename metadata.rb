@@ -372,6 +372,10 @@ attribute "ndb/DiskIOThreadPool",
 attribute "ndb/DiskPageBufferMemory",
           :description => "This determines the amount of space used for caching pages on disk",
 
+attribute "ndb/SharedGlobalMemory",
+          :description => "This parameter determines the amount of memory that is used for log buffers, disk operations (such as page requests and wait queues), and metadata for tablespaces, log file groups, UNDO files, and data files",
+          :type => 'string'
+
 attribute "install/dir",
           :description => "Set to a base directory under which we will install.",
           :type => "string"
