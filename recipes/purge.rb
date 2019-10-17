@@ -104,7 +104,7 @@ package "libaio remove" do
   case node['platform']
   when 'redhat', 'centos'
     package_name 'libaio1'
-  when 'ubuntu', 'debian'
+  when 'ubuntu', 'debian', "amazon"
     package_name 'libaio'
   end
  ignore_failure true

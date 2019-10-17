@@ -181,7 +181,7 @@ if "#{node['ndb']['aws_enhanced_networking']}" == "true"
        ndb_ixgbevf "enhanced_ec2_networking" do
          action :install_ubuntu
        end
-     when 'redhat', 'centos', 'fedora'
+     when 'redhat', 'centos', 'fedora', "amazon"
        ndb_ixgbevf "enhanced_ec2_networking" do
          action :install_redhat
        end
